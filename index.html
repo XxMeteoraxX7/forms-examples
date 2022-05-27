@@ -1,0 +1,162 @@
+<!DOCTYPE html/>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!--Form example-->
+
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" enctype="multipart/form-data">
+
+ <!--Input Text Form Example-->           
+        <div class="form">    
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your First Name Here" required> 
+                <!-- value="This would prepopulate the field with text, used instead of placeholder up above"-->
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Your Last Name Here" required>
+            </div>
+        </div>
+
+<!--Input Email Form Example-->
+        <div class="email">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+<!--Number-->
+        <div class="number">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="0" max="125">
+            <!-- step="2" This would make the number bar raise and lower in incraments of 2 up above.-->
+        </div>
+
+<!--Date Form Example-->
+        <div class="date">
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date" min="2000-12-30">
+        </div>
+
+<!--Multiple Checkbox Example-->
+        <div class="checkbox">
+            <div>
+                Favorite Fruits
+                <div>
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" name="banana" id="banana">
+                </div>
+                <div>
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" name="apple" id="apple">
+                </div>
+                <div>
+                    <label for="orange">Orange</label>
+                    <input type="checkbox" name="orange" id="orange">
+                </div>
+            </div>
+        </div>
+
+<!--Radio Button Example-->
+        <div class="radio">
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <!--Name in input must be the same to get the radio buttons to work together, value is required to get feedback on the server.-->
+                </div>
+            </div>
+        </div>
+
+<!--Selector Example Single Selection-->
+        <div class="selector1">
+            <div>
+                <label for="eyecolor">Eye Color</label>
+                <select name="eyecolor" id="eyecolor">
+                    <option value="green">Green</option>
+                    <option label="red">Red</option>
+                    <option value="brown">Brown</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                    <!--After the <option> tag you can use lable or value, it will provide the same outcome. -->
+                </select>
+            </div>
+        </div>
+
+<!--Selector Example Multiple Selection-->
+        <div class="selector2">
+            <div>
+                <label for="contacttimes">Preferred Contact Times</label>
+                <select name="contacttimes" id="contacttimes" multiple>
+                    <!--multiple attribute allows you to select more than one option-->
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="overnight">Overnight</option>
+                    <option value="anytime">Anytime</option>
+                </select>
+            </div>
+        </div>
+
+<!--Text Area Example-->
+        <div class="textarea">
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself" rows="5" cols="40"></textarea>
+                <!--Must make sure there is no whitespace between the <textarea></textarea> any white space will be included in the Text Area-->
+            </div>
+        </div>
+
+<!--Hidden Form Example-->
+        <div>
+            <input type="hidden" name="hidden" value="This will appear in the feedback">
+        </div>
+
+<!--File Input Example-->
+        <div class="file">
+            <div>
+                <label for="file">File</label>
+                <input type="file" name="file" id="file">
+                <!--In the beginning Form element must include the attribute/value enctype="multipart/form-data" to get files to send correctly-->
+            </div>
+        </div>    
+
+<!--Phone Input Form-->
+        <div class="phone">
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+        </div>
+
+<!--URL Input Form-->
+        <div class="url">
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+        </div>
+
+<!--Color Form Example-->
+        <div class="color">
+            <div>
+                <label for="color">Choose Your Favorite Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+</body>
+</html>

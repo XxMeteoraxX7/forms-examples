@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+.form {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.email {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.number {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.date {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.checkbox {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.radio {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.selector1 {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.selector2 {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.textarea {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.file {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.phone {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.url {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+.color {
+    border: 3px solid black;
+    padding: 15px;
+    margin: 5px;
+}
